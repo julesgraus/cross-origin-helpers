@@ -1,0 +1,25 @@
+{
+    "name": "jules/cross-origin-dd",
+    "description": "Enables laravels dd method to work cross origin.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jules Graus",
+            "email": "jules.graus@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"JulesGraus\\CrossOriginDD": "src"}
+    },
+    "require": {
+        "laravel/framework": "^7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JulesGraus\\CrossOriginDD\\ServiceProvider"
+            ]
+        }
+    }
+}
