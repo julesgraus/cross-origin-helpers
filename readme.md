@@ -27,7 +27,7 @@ cdie('Cross origin die test');
 cdump('Cross origin dump test');
 ```
 
-##Configuration
+## Configuration
 The helpers provided by this package use the same cors config file as Laravel 7 provides by default.
 Use Laravels cors config file ```config/cors``` to setup cors and the helpers should work too.
 Also see [The laravel manual](https://laravel.com/docs/7.x/routing#cors) for more info.
