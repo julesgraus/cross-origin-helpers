@@ -5,8 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jules Graus",
-            "email": "jules.graus@gmail.com"
+            "name": "Jules Graus"
         }
     ],
     "autoload": {
@@ -16,7 +15,7 @@
         ]
     },
     "require": {
-        "laravel/framework": "^7.24"
+        "laravel/framework": ">=7.24 <9.0"
     },
     "extra": {
         "laravel": {
