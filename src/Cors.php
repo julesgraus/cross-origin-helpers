@@ -45,9 +45,10 @@ class Cors
             }
         };
 
-        $headerData = implode(', ', config('cors.allowed_origins', []));
-        if($headerData == '') return;
-        header('Access-Control-Allow-Origin: '.$headerData);
+        $origin = request()->header('origin');
+        if(in_array($origin, config('cors.allowed_origins'))) {
+            header('Access-Control-Allow-Origin: '.$origin);
+        }
     }
 
     public static function outputAllowHeaders() {
