@@ -1,0 +1,26 @@
+{
+    "name": "julesgraus/cross-origin-helpers",
+    "description": "Enables some methods like the dd method from Laravel to work cross origin. just add a c before the function call.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jules Graus"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"JulesGraus\\CrossOriginHelpers\\": "src"},
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require": {
+        "laravel/framework": ">=7.24 <9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+            ]
+        }
+    }
+}
