@@ -2,8 +2,9 @@
 
 namespace JulesGraus\CrossOriginHelpers;
 
+
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class Cors
@@ -15,9 +16,6 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class Cors
 {
-    /** @var \Illuminate\Contracts\Container\Container $container */
-    protected $container;
-
     public static function outputHeaders(Request $request) {
         if(!self::corsEnabledPath($request)) return;
 

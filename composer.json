@@ -15,7 +15,7 @@
         ]
     },
     "require": {
-        "laravel/framework": ">=7.24 <9.0"
+        "laravel/framework": ">=7.24 <10.0"
     },
     "extra": {
         "laravel": {
